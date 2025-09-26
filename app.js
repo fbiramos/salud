@@ -13,7 +13,7 @@ const ADMIN_PASSWORD = 'family'; // Contraseña de administrador
 function showLoginScreen() {
     appContainer.innerHTML = `
         <div class="text-center">
-            <h2 class="text-2xl font-semibold mb-6">¿Quién eres?</h2>
+            <h2 class="text-2xl font-semibold mb-6">Identificarse</h2>
             <div class="space-y-4">
                 <button id="adminBtn" class="w-full max-w-xs bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition duration-300">
                     Soy Administrador
