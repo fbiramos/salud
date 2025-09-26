@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Salud</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#4F46E5"/>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-indigo-600 text-white p-4 shadow-md">
+        <h1 class="text-2xl font-bold text-center">Control de Salud</h1>
+    </header>
+
+    <main id="app" class="p-4">
+        <!-- El contenido de la aplicación se cargará aquí -->
+    </main>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCZZA1-XxjLKHbXeT7rdRMzNLCGq5iQSIA",
+        authDomain: "salud-app-nueva.firebaseapp.com",
+        projectId: "salud-app-nueva",
+        storageBucket: "salud-app-nueva.firebasestorage.app",
+        messagingSenderId: "433065429532",
+        appId: "1:433065429532:web:758b4ea707326af1feadd9"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const auth = firebase.auth();
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
